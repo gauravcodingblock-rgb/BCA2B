@@ -1,0 +1,31 @@
+/*An array is a collection of elements of the same data type stored in contiguous memory.
+
+To find the sum of its elements:
+
+Declare and initialize the array.
+
+Create a variable (e.g., sum) to store the total.
+
+Use a loop (for, while, or for-each) to traverse the array.
+
+Add each element to the sum.
+
+Display the result.*/
+
+public class SumOfArray {
+    public static void main(String[] args) {
+        // Step 1: Declare and initialize the array
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // Step 2: Initialize sum variable
+        int sum = 0;
+
+        // Step 3: Traverse the array using for loop
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];  // Add each element to sum
+        }
+
+        // Step 4: Display the result
+        System.out.println("Sum of array elements: " + sum);
+    }
+}
