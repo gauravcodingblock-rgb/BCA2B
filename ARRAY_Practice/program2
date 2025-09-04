@@ -1,0 +1,25 @@
+/*how to print an array in reverse order in Java.
+
+Theory
+
+To reverse print an array:
+
+Start from the last index (array.length - 1).
+
+Traverse the array backwards using a for loop.
+
+Print each element.*/
+
+public class ReverseArray {
+    public static void main(String[] args) {
+        // Declare and initialize the array
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        System.out.println("Array in reverse order:");
+
+        // Loop from last index to first
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
+}
