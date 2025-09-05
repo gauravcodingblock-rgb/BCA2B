@@ -1,0 +1,41 @@
+package BCAB1;
+
+public class Lec1 {
+    public static void main(String[] args){
+        String s="GLA";// stored in constant pool
+        String s1="GLA";
+       
+        System.out.println(s1.charAt(0));
+        String s4="Aditya";
+        String s5="same data aditya";
+        String words[]=s5.split(" ");
+          for(int i=0; i<words.length; i++){
+            System.out.print(words[i]+" ");
+        }
+         System.out.println();
+        char arr[]=s4.toCharArray();
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+         System.out.println();
+        char[] baba=s1.toCharArray();
+        System.out.println(s1.indexOf('A'));
+        System.out.println(s);
+        System.out.println(s==s1);
+        String s2=new String("GLA");
+        System.out.println(s1==s2);
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.length());
+        System.out.println("abcdef".toUpperCase());
+        System.out.println("ABCDEF".toLowerCase());
+        System.out.println("   abcd   ".trim());
+        System.out.println("cycle".concat("Running"));
+        StringBuilder s12=new StringBuilder("Loutus bloom in dirty water ");
+        System.out.println(s12.append("in India"));
+        StringBuffer s22=new StringBuffer(" Buldoger is not working");
+        System.out.println(s22);
+        System.out.println(s1.indexOf('l'));
+       
+    }
+    
+}
