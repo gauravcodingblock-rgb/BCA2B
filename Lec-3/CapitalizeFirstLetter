@@ -1,0 +1,29 @@
+public class CapitalizeFirstWord {
+    public static void main(String[] args) {
+        String sentence = "   gauravnc ";
+
+        // Trim leading spaces
+        sentence = sentence.trim();
+
+        // Capitalize only the first word
+        String firstWord = "";
+        String rest = "";
+
+        int spaceIndex = sentence.indexOf(" ");
+        if (spaceIndex != -1) {
+            firstWord = sentence.substring(0, spaceIndex);
+            rest = sentence.substring(spaceIndex); // keep the rest as it is
+        } else {
+            firstWord = sentence;
+        }
+
+        // Capitalize first letter, rest in lowercase
+        firstWord = firstWord.substring(0,1).toUpperCase() + firstWord.substring(1).toLowerCase();
+
+        // Final sentence
+        String result = firstWord + rest;
+
+        System.out.println("Original: " + sentence);
+        System.out.println("Modified: " + result);
+    }
+}
