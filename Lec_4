@@ -1,0 +1,26 @@
+package BCAB1;
+
+public class Lec2_1 {
+    int age;
+    int salary;
+    int marks;
+    void run(){
+        System.out.println("Hi i am running");
+    }
+    Lec2_1(){
+        System.out.println("I am Constructor");
+    }
+    Lec2_1(int age,int salary){
+        this.age=age;
+        this.salary=salary;
+        System.out.println("I am Constructor");
+    }
+
+    public static void main(String[] args) {
+        Lec2_1 Ak=new Lec2_1();
+        Lec2_1 obj=new Lec2_1(25,2);
+        System.out.println(obj.age+" "+obj.salary);
+        
+    }
+    
+}
