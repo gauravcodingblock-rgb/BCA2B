@@ -1,0 +1,38 @@
+package BCA2B;
+class Student{
+    int rollno;
+    int age;
+    String name;
+    float marks;
+    void play(){
+        System.out.println(this.name+" is Playing a game");
+    }
+
+
+}
+
+public class Lec5 {
+    // creating user defined data type we can use class 
+    public static void main(String[] args)
+    {
+         Student ram=new Student();
+         ram.rollno=1;
+         ram.age=15;
+         ram.name="ram";
+         ram.marks=97.81f;
+         System.out.println(ram.name);
+         System.out.println(ram.age);
+         ram.play();
+        Student Abhishek=new Student();
+        Abhishek.rollno=3;
+        Abhishek.age=21;
+        Abhishek.marks=100.00F;
+        Abhishek.name="Abhishek";
+        Abhishek.play();
+
+
+
+    }
+    
+    
+}
