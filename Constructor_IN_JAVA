@@ -1,0 +1,50 @@
+package BCA2B;
+class A{
+    A(){
+        System.out.println("I am called");
+    }
+    int x;
+    int y;
+    String name;
+    A(int x, int y){
+        this(10);
+        System.out.print("i am called 2 int value");
+        this.x=x;
+        this.y=y;
+    }
+    A(int x, String name){
+        this.x=x;
+        this.name=name;
+    }
+     A(int x){
+           System.out.println("i am called 1 int value");
+        this.x=x;
+        this.y=y;
+    }
+    A(A obj){
+        this.x=obj.x;
+        this.y=obj.y;
+        this.name=obj.name;
+    }
+    
+
+    
+
+}
+
+public class Lec6 {
+    public static void main(String[] args) {
+        A obj=new A(4);
+        A obj1=new A(4,"GLQ");
+        obj1.y=10;
+        System.out.println(obj1.name);
+        A obj2=new A(obj1);
+        System.out.println(obj2.x +" "+obj1.x );
+         System.out.println(obj2.name +" "+obj1.name );
+         System.out.println(obj2.y +" "+obj1.y );
+         A obj3=new A();
+        A obj4=new A(2,5);
+
+    }
+    
+}
