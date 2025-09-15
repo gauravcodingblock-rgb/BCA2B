@@ -1,0 +1,46 @@
+package BCAB1;
+// Constructor is used to initilized the objectg
+class Car{
+    //1 default constructor 
+    //2.No-args constructor
+    //3. parameterized constructor :a constructor in which
+    // pass some values 
+    // 4. Copy constructor 
+    Car(){
+        System.out.println("I am called");
+    }
+    int x;
+    String name;
+      Car(int x,String name){
+        this.x=x;
+        this.name=name;
+        System.out.
+        println("I am parameterized with 2 value constructor called");
+    }
+    Car(String name){
+        this(22,"Kataracar");
+        this.name=name;
+        System.out.
+        println("I am  parameterized with 1 value constructor called");
+    }
+    Car(Car c2){
+        System.out.println("Copy constructor is called");
+        this.x=c2.x;
+        this.name=c2.name;
+    }
+
+    
+
+}
+public class Lec5Cons {
+    public static void main(String[] args) {
+        Car c=new Car("Lamborgini");// it called default constructor
+        //System.out.print(c.name);
+        Car c1 = new Car(c);
+
+
+
+        
+    }
+    
+}
