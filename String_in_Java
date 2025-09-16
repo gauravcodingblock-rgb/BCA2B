@@ -32,7 +32,7 @@ public class Lec1 {
         System.out.println("cycle".concat("Running"));
         StringBuilder s12=new StringBuilder("Loutus bloom in dirty water ");
         System.out.println(s12.append("in India"));
-        StringBuffer s22=new StringBuffer(" Buldoger is not working");
+        StringBuffer s22=new StringBuffer(" Ramesh is not working");
         System.out.println(s22);
         System.out.println(s1.indexOf('l'));
        
