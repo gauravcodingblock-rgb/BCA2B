@@ -1,0 +1,45 @@
+package BCA2B;
+class GLA{
+    int x=10;
+    int y=20;
+    public GLA(int x, int y){
+        this.x=x;
+        this.y=y;
+
+    }
+    public GLA(){
+       
+       
+
+    }
+     public GLA(int x){
+        this.x=x;
+       
+
+    }
+     public GLA(GLA g){
+       this.x=g.x;
+       this.y=g.y;
+       
+
+    }
+
+}
+class GLA2 extends GLA{
+    public GLA2(){
+       
+
+    }
+
+}
+public class Lec7 {
+    public static void main(String[] args) {
+        GLA g1=new GLA(500);
+        GLA g2=new GLA(g1);
+        GLA2 g3=new GLA2();
+        System.out.println(g2.x+ " "+g2.y);
+
+        
+    }
+    
+}
