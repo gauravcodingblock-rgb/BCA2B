@@ -1,0 +1,167 @@
+package BCAB1;
+
+import java.util.Scanner;
+
+public class Experiment2 {
+    public static void main(String[] args) 
+    {
+        int a=100,b=13,c=99;
+        if(a>b && a>c){
+            System.out.println(a);
+        }
+        else if(b>c){
+              System.out.println(b);
+
+        }
+        else{
+            System.out.println(c);
+
+        }
+        Scanner scn=new Scanner(System.in);
+        int age=scn.nextInt();
+        int price=0;
+        if(age<12){
+            price=5;
+
+        }
+        if(age>65){
+            price=7;
+        }
+        else{
+            price=10;
+        }
+        boolean membership=scn.nextBoolean();
+        if(membership==true){
+            price-=2;
+        }
+        System.out.println(price+"$");
+        int day=2;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+             case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            
+        
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+
+         Scanner scn =new Scanner(System.in);
+        int x=scn.nextInt();
+        String c=scn.next();
+        int y=scn.nextInt();
+        switch (c) {
+            case "+":
+                 System.out.println(x+y);
+                 break;
+            case "-":
+                 System.out.println(x-y);
+                 break;
+             case "x":
+                 System.out.println(x*y);
+                 break;
+            case "/":
+                 if(y==0){
+                    System.out.println("Can't divide zero");
+                 }
+                 else
+                 System.out.println(x/y);                
+                 break;
+
+            default:
+                System.out.println("Invalid operator");
+                
+        }
+        int n=7;
+        int res=1;
+        for(int i=1; i<=n; i++){
+            res=res*i;
+
+        }
+        System.out.println(res);
+        int count =1;
+        while(count<=3){
+            System.out.println("Enter a 4 digit password");
+            int pass=scn.nextInt();
+            int currpass=9356;
+            if(pass==currpass){
+                 System.out.println("Grant Access");
+                 break;
+
+            }
+           
+            else if(count>=3){
+                System.out.println("System is locked Access denied");
+            }
+
+             else{
+                 System.out.println("Please Enter correct password");
+                 System.out.println("Attempt left "+(3-count));
+
+            }
+            count++;
+        }
+        int n=11;
+        for(int i=1; i<=10; i++){
+            System.out.println(n+" X "+ i+"="+" "+n*i);
+
+        }
+        int x=99;
+        int sum=0;
+        while(x!=0){
+            sum=sum+x%10;
+            x/=10;
+        }
+         System.out.println(sum);
+        float f=9.345f;
+        int x=(int)f;
+        int x1=99;
+        float u=x1;
+        System.out.println(u);
+        int star=1;
+        int n=5;
+        int row=1;
+        while(row<=n){
+            for(int i=1; i<=star; i++){
+                System.out.print("*");
+            }
+             System.out.println();
+            star++;
+            row++;
+        }
+        int n=5;
+        int row=1;
+        while(row<=n){
+            for(int i=1; i<=n; i++){
+                if(row==i){
+                    System.out.print(i);
+
+                }else
+
+                System.out.print("1");
+            }
+             System.out.println();
+            row++;
+        }
+    
+}
+}
