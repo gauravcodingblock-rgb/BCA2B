@@ -1,0 +1,76 @@
+package BCA2G1;
+
+import java.util.Scanner;
+
+public class arraayrev {
+    public static void main(String[] args) {
+        int []marks=new int[5];
+       System.out.println(marks[0]);
+        marks[0]=90;
+        System.out.println(marks);
+        Scanner scn=new Scanner(System.in);
+        for(int i=0; i<marks.length;i++){
+            marks[i]=scn.nextInt();
+
+        }
+         for(int i=0; i<marks.length;i++){
+          System.out.print(marks[i]+" ");
+
+        }
+          System.out.println();
+        int[] maths={10,20,30,40,50};
+        for(int i=0; i<maths.length;i++){
+          System.out.print(maths[i]+" ");
+
+        }
+        boolean[] b1=new boolean[5];
+        for(int i=0; i<b1.length;i++){
+          System.out.print(b1[i]+" ");
+
+        }
+        int[][] mat=new int[2][3];
+        System.out.println(mat); 
+        System.out.println("---------------------------------------"); 
+        Scanner scn =new Scanner(System.in);
+        for(int i=0; i<mat.length; i++){
+              for(int j=0; j<mat[i].length; j++){
+                mat[i][j]=scn.nextInt();
+            
+
+         }
+
+
+        }
+          System.out.println("---------------------------------------"); 
+         for(int i=0; i<mat.length; i++){
+              for(int j=0; j<mat[i].length; j++){
+               System.out.print(mat[i][j]+" ");
+
+         }
+          System.out.println();
+
+        }
+        int[][] mat1={{1,2,3},{4,5,6},{7,8,9}};
+        
+              for(int j=0; j<mat1[0].length; j++){
+                 for(int i=0; i<mat1.length; i++){
+               System.out.print(mat1[i][j]+" ");
+
+         }
+          System.out.println();
+
+        }
+        int[] beauty={11,22,-1,-99,88,344,87,420,978};
+        int res=beauty[0];
+        for(int i=1; i<beauty.length; i++){
+            if(res<beauty[i]){
+                res=beauty[i];
+
+            }
+        }
+        System.out.println(res);
+
+        
+    }
+    
+}
