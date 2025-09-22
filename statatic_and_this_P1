@@ -1,0 +1,26 @@
+package BCA2B;
+class A111{
+    static int a=10;
+    int x;
+    static{
+        System.out.println("I am static block in A111");
+
+    }
+    A111(){
+        System.out.println("I am constructor");
+    }
+}
+public class Lec8 {
+
+    public static void main(String[] args){
+        A111 obj1=new A111();
+        System.out.println("I am main");
+       A111 obj2=new A111();
+        
+
+        System.out.println(obj1.x);
+        System.out.println(obj2.a);
+
+    }
+    
+}
